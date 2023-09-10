@@ -7,21 +7,18 @@
 
 // [1, 2, 7, 0, 0, 0]
 
-function moveZeros(nums){
-    let left = 0
-    let right = 0
+function moveZeros(nums) {
+  let left = 0;
+  let right = 0;
 
-    while(right < nums.length){
-        if(nums[right] !== 0){
-            [nums[left], nums[right]] = [nums[right], nums[left]]
-            left++
-        }
-        right++
+  while (right < nums.length) {
+    if (nums[right] !== 0) {
+      [nums[left], nums[right]] = [nums[right], nums[left]];
+      left++;
     }
-    return nums
-
-
+    right++;
+  }
+  return nums;
 }
-
 
 console.log(moveZeros([1, 4, 2, 0, 0, 7]));

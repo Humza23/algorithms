@@ -6,9 +6,9 @@ function search(array, val) {
     let middle = Math.floor((min + max) / 2);
     let currentElement = array[middle];
 
-    if (array[middle] < val) {
+    if (currentElement < val) {
       min = middle + 1;
-    } else if (array[middle] > val) {
+    } else if (currentElement > val) {
       max = middle - 1;
     } else {
       return middle;
@@ -17,3 +17,6 @@ function search(array, val) {
 
   return -1;
 }
+
+
+console.log(search([1,5,6,7,12,32,43,55],43));
