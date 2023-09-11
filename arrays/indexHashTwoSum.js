@@ -19,7 +19,7 @@ function twoSum(nums, target) {
         let value = nums[i]
         let complementPair = target - nums[i]
         
-        if(!(complementPair in map)){
+        if(complementPair in map){
             return [map[complementPair], i]
         }else{
             map[value] = i
