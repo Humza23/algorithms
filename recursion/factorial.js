@@ -14,5 +14,5 @@ function adder(num) {
     return total;
   }
   
-  const result = adder(5);
+  const result = adder(2);
   console.log(result);
