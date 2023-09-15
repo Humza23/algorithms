@@ -1,9 +1,9 @@
-function factorial(num){
-    if (num === 1) console.log(1);
-    return num * factorial(num-1)
-}
+// function factorial(num){
+//     if (num === 1) console.log(1);
+//     return num * factorial(num-1)
+// }
 
-factorial(4)
+// factorial(4)
 
 
 function adder(num){
