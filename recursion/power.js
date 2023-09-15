@@ -7,4 +7,9 @@ function power(base,exponent){
 }
 
 
-power(2,4) // 16
+console.log(power(2,5)) // 32
+
+// 2* exponent 3
+// 2* exponent 2
+// 2* exponent 1
+// 2* exponent 0
