@@ -11,6 +11,7 @@ function adder(num){
    for (let i =0;i<num;i++){
     total += num[i]
    }
+   return total
 }
 
 adder(5)
