@@ -4,3 +4,13 @@ function factorial(num){
 }
 
 factorial(4)
+
+
+function adder(num){
+    let total = 0
+   for (let i =0;i<num;i++){
+    total += num[i]
+   }
+}
+
+adder(5)
