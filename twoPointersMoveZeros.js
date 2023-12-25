@@ -21,4 +21,4 @@ function moveZeros(nums) {
   return nums;
 }
 
-console.log(moveZeros([1, 4, 2, 0, 0, 7]));
+console.log(moveZeros([1,2,0,3,0,1]));

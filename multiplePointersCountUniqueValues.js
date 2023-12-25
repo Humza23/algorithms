@@ -14,3 +14,5 @@ function countUniqueValues(arr) {
   }
   return left + 1;
 }
+
+console.log(countUniqueValues([2, 1, 3, 2, 1, 2, 3, 2]))
