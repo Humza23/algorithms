@@ -128,8 +128,11 @@ class SinglyLinkedList{
 
     }
     reverse(){
+        // H                 T
         // 1 --> 2 --> 3 --> 4
-        // 4 --> 3 --> 2 --> 1  -> null               
+        
+        // T                 H
+        // 1  <- 2  <- 3  <- 4           
         // 
         let node = this.head
         this.head = this.tail
