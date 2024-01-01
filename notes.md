@@ -1,0 +1,52 @@
+# Data Structures
+
+### Linked Lists - 
+    Singly Linked - O(1) insertion and O(1) or O(N) removal (depends since if at end have to iterate through all)
+    Doubly Linked - O(1) insertion and O(1) removal
+### Stack
+    unshift to add
+    shift to delete
+### Queue
+    push to add
+    shift to delete
+
+--
+### Hash Table
+    insert/deletion/access is O(1)
+
+### Binary Search
+    used for sorted data
+    O(log n) logarithmic time 
+
+
+# Sorting
+
+### Bubble Sort
+    Larger elements "bubble" to the end of array
+    Start i at the end while i > 0
+    Nested loop, i < arr.length, j < i-1
+    if arr[j] > arr[j+1] swap
+    check if any swaps on last iteration to avoid useless iterations and then break
+
+    O(N^2)
+    With almost sorted data - O(N)
+
+### Selection Sort
+    Go through and "select" the smallest values
+    Find minimum, swap at end of each sub iteration
+    start i =0
+    track index with minIdx variable
+    nested loop j = j+1
+    if minIdx variable isnt same, swap
+
+    O(N^2)
+
+### Insertion Sort
+    Start at 2nd element
+    Compare 1 value with left side and "insert" it at the appropriate index.
+    2nd loop is j=i-1; while arr[j] > currentVal; j-- to go from starting point to beginning
+    arr[j+1] = arr[j]
+    end of inner loop
+    arr[j+1] = currentVal
+
+    O(N^2)
