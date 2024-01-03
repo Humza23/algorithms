@@ -50,3 +50,14 @@
     arr[j+1] = currentVal
 
     O(N^2)
+
+### Merge Sort
+    Splits array into 2 elements each, then to 1, then compares, then combines, and repeat.
+    array of 8 elements becomes 4 of 2 until 1 element only and then combines
+    code:
+    merge Arr, while iterating through both
+    add leftover arr
+    mergeSort recursive function, if arr.length <= 1 return arr
+    set a midPoint, and left/right using recursive function(arr[0:midpoint])
+    return mergeFunction(left,right)
+    O(n log n), it divides logarithmically and then does an n operation to sort

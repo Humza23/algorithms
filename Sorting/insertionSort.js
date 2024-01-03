@@ -8,8 +8,10 @@ function insertionSort(arr){
         for(j=i-1; j>=0 && arr[j] > currentVal; j--){
             
             arr[j+1] = arr[j]
+            console.log(arr);
         }
         console.log(arr);
+
         arr[j+1] = currentVal
     }
     return arr
