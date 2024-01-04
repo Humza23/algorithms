@@ -60,4 +60,38 @@
     mergeSort recursive function, if arr.length <= 1 return arr
     set a midPoint, and left/right using recursive function(arr[0:midpoint])
     return mergeFunction(left,right)
+
     O(n log n), it divides logarithmically and then does an n operation to sort
+
+### Quick Sort
+    Takes 1st element and figures out where it should be placed correctly
+
+    PIVOT HELPER Function (arr,start=0,end=len-1):
+    create a swap function
+    start at 0
+    pivot = arr[start]
+    swapIdx = start
+    if start+1 > pivot
+    swapIdx++
+    swap(arr,swapIdx,i)
+
+    Then at the end you swap, swapIdx with start to correctly place the first element
+
+    QuickSort function (arr,start=0,end=len-1):
+        if left < right:
+        pivotIdx = pivot(arr,left,right)
+        quickSort(arr,left,pivotIdx-1)
+        quickSort(arr,pivotIdx+1, right)
+
+        return arr
+
+    O(n log n) decomposing the arrays
+    O(n^2) worst case if its sorted
+    UNDERSTAND THE DIAGRAMING MORE SO THAN THE CODE AND HOW EACH ITERATION RUNS
+    [4,6,9,1,2,5,3]
+    [3,2,1,4,6,9,5]
+           4
+     3,2,1   6,9,5
+         3    6
+     2,1     5,9
+     1
