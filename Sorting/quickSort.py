@@ -5,15 +5,14 @@ def pivot(arr, start=0, end=None):
     def swap(array, i,j):
         [array[i], array[j]] = [array[j], array[i]]
 
-    pivot = arr[start]
+    pivot_value = arr[start]
     swapIdx = start
 
 
     for i in range(start + 1,len(arr)):
-        if pivot > arr[i]:
+        if pivot_value > arr[i]:
             swapIdx += 1
             swap(arr,swapIdx,i)
-            print(arr)
     
     swap(arr,start,swapIdx)
     return swapIdx

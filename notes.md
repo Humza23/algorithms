@@ -95,3 +95,23 @@
          3    6
      2,1     5,9
      1
+
+### Radix Sort
+    getDigit(num,place) - num // 10**place %10
+    digitCount(num) - len(str(abs(num)))
+    mostDigits(nums) check which num has most digits
+
+    now implement radixSort
+    loop K up to the mostDigits(nums)
+        create 10 buckets,
+            digitBuckets = [[] for _ in range(10)]
+        loop over input nums
+            to get the digit = getDigit(nums[i], k) 
+        place num in digetBuckets[digit].append(nums[i])
+
+        new_nums List
+        loop sublist over bucket
+            new_nums.extend(sublist)
+
+        update nums = new_nums
+    return nums
