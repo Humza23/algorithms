@@ -12,8 +12,8 @@ class Solution:
         # col = len(matrix[0])
         # result = [[0] * row for _ in range(col)]
         
-        # for i in range(col):
-        #     for j in range(row):
-        #         result[i][j] = matrix[j][i]
+        # for r in range(row):
+        #     for c in range(col):
+        #         result[c][r] = matrix[r][c]
                 
         # return result
